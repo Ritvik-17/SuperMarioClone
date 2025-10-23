@@ -22,6 +22,18 @@ This project was developed for NITK WEC'25 Recruitments
 
 <br>
 
+<b>Implemented Features</b>
+
+1. Player physics, Animated Sprites, Dynamic Camera follow
+2. Variable Jump based on key input (Bonus Task)
+3. Sprite based graphics which include (Ground, Platform, Clouds, etc)
+4. Sound system & SFX (Coins, Gameover, Victory screen etc) (Bonus Task)
+5. Animated enemy sprites and collectable coins
+6. Power up Mario -> Super Mario (Bonus Task)
+7. Screening (You Won, You Lost, And main menu with "Play" & "Quit" buttons)
+   
+<br>
+
 Thank You.
 
 Cheers,
