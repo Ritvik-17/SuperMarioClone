@@ -20,7 +20,7 @@ This project was developed for NITK WEC'25 Recruitments
 <img width="475" height="247" alt="gamescreenshot1" src="https://github.com/user-attachments/assets/80403c10-2609-4aec-87f0-bc4a102a32ad" />
 <img width="476" height="251" alt="gamescreenshot3" src="https://github.com/user-attachments/assets/72cce85a-ecaa-47f6-8d1a-63f07f42a56a" />
 
-<br>
+<br><br>
 
 <b>Implemented Features</b>
 
