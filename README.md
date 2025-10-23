@@ -1,4 +1,4 @@
-This project was developed for WEC'25 Recruitments
+This project was developed for NITK WEC'25 Recruitments
 
 <b>How to Install and Run The Project</b>
 
