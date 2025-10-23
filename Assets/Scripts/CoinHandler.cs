@@ -12,6 +12,7 @@ public class CoinHandler : MonoBehaviour
         {
             CoinCounter.IncrementCoinCount();
             Destroy(gameObject);
-        }
+            FindObjectOfType<AudioManager>().Play("Coin");
+        }        
     }
 }

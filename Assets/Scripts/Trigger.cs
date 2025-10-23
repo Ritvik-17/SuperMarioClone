@@ -2,18 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WinningPole : MonoBehaviour
+public class Trigger : MonoBehaviour
 {
-    public GameObject YouWonScreen;
+    public GameObject YouDiedScreen;
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
-        {   
-            YouWonScreen.SetActive(true);
-            FindObjectOfType<AudioManager>().Play("GameWon");
+        {
+            YouDiedScreen.SetActive(true);
             FindObjectOfType<AudioManager>().Stop("Theme");            
+            FindObjectOfType<AudioManager>().Play("GameOver");
             Time.timeScale = 0f;
-        }
+        }        
     }
 }

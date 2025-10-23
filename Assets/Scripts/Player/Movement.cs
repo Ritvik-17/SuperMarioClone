@@ -12,6 +12,7 @@ public class Movement : MonoBehaviour
     public float maxJumpTime = 0.35f;
     public float holdJumpForce = 8f;
     private bool isJumping = false;
+    public float AddVelocity = 5f;
 
     void Start()
     {
@@ -38,12 +39,12 @@ public class Movement : MonoBehaviour
         if (moveInput > 0.01f)
         {
             transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
-            MarioRigidbody2D.velocity = new Vector2(moveInput * 5f, MarioRigidbody2D.velocity.y);
+            MarioRigidbody2D.velocity = new Vector2(moveInput * AddVelocity, MarioRigidbody2D.velocity.y);
         }
         else if(moveInput < -0.01f)
         {
             transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x)*-1, transform.localScale.y, transform.localScale.z);
-            MarioRigidbody2D.velocity = new Vector2(moveInput * 5f, MarioRigidbody2D.velocity.y);
+            MarioRigidbody2D.velocity = new Vector2(moveInput * AddVelocity, MarioRigidbody2D.velocity.y);
         }
         else
         {
