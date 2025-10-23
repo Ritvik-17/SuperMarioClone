@@ -10,11 +10,13 @@ public class GroundChecker : MonoBehaviour
     {
         if (collision.CompareTag("Ground") || collision.CompareTag("Platform"))
             isGrounded = true;
+            Debug.Log("TouchedGround");
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Ground") || collision.CompareTag("Ground"))
             isGrounded = false;
+            Debug.Log("ExitedGround");
     }
 }

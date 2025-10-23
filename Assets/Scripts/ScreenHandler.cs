@@ -28,6 +28,7 @@ public class ScreenHandler : MonoBehaviour
     }
 
     void Instantiate(){
+        FindObjectOfType<AudioManager>().Play("Theme");
         Time.timeScale = 1f;
     }
 }

@@ -7,7 +7,9 @@ public class Movement : MonoBehaviour
 
     private Rigidbody2D MarioRigidbody2D;
     public GroundChecker groundCheck;
+    public GameObject FollowObject;
 
+    public float Lives = 0;
     private float jumpTimeCounter;
     public float maxJumpTime = 0.35f;
     public float holdJumpForce = 8f;
@@ -69,6 +71,14 @@ public class Movement : MonoBehaviour
         if(Input.GetButtonUp("Jump"))
         {
             isJumping = false;
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Easter")
+        {
+            FollowObject.GetComponent<FollowMarioInXAxis>().EasterEggEnabled = true;
         }
     }
 
