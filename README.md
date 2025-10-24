@@ -31,6 +31,7 @@ This project was developed for NITK WEC'25 Recruitments
 5. Animated enemy sprites and collectable coins
 6. Power up Mario -> Super Mario (Bonus Task)
 7. Screening (You Won, You Lost, And main menu with "Play" & "Quit" buttons)
+8. An Easter Egg? 👀
    
 <br>
 
